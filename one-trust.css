@@ -1,0 +1,266 @@
+html {
+    color: #000 !important;
+}
+
+/* [ HEADER CSS START ] */
+.wrapper-header__header {
+    height: 80px !important;
+    > img {
+        width: 244.6px !important;
+        height: 32px !important;
+        padding: 0 !important;
+        margin: 24px !important;
+    }
+    select {
+        font-weight: bold;
+        color: #1360aa !important;
+        margin-right: 14px;
+    }
+    .vt-button-base {
+        display: none !important;
+    }
+}
+/* [ HEADER CSS END ] */
+
+/* [ HIDING HEADER CSS START ] */
+multipage-user-banner {
+    display: none;
+}
+/* [ HIDING HEADER CSS END ] */
+
+/*  ONLY FOR CREDIT CARD CENTER ALSO THE CSS CAN BE REUSED BY CHANGING THE ID */
+/* [ - SHARING PREFERENCES CSS START ] */
+#tabpanel_5469c3d3-7e1f-4a10-a7e7-9ec0b8d1ee80 {
+    background: #f8f8f8;
+    border: none;
+    box-shadow: none;
+    .ot-preference-section-items {
+        background: #f8f8f8 !important;
+        .ot-preference-text-block {
+            max-width: 100% !important;
+            margin: 0;
+            h1 {
+                font-size: 28px !important;
+                margin-top: 14px;
+                color: #000;
+                font-weight: 700;
+                margin-bottom: 16px;
+                display: inline-block;
+            }
+            p {
+                color: rgba(0, 0, 0, 0.8);
+                font-weight: 400;
+                font-size: 16px !important;
+                a {
+                    color: #1360aa !important;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+/* [ **ONLY FOR CREDIT CARD CENTER - SHARING PREFERENCES CSS END ] */
+
+/* [ TOGGLE CSS START ] */
+.ot-toggle {
+    width: 52px !important;
+    height: 32px !important;
+}
+.ot-toggle-slider {
+    border-radius: 20px !important;
+    background-color: #717173;
+    border: none;
+}
+.ot-toggle-slider:before {
+    position: absolute;
+    content: "";
+    border-radius: 20px;
+    height: 24px;
+    width: 24px;
+    left: 3px;
+    bottom: 4px;
+    background-color: #eff0f2;
+    transition: 0.15s;
+}
+input:checked + .ot-toggle-slider::after {
+    content: "L";
+    display: flex;
+    font-size: 19px;
+    font-family: arial;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 31px;
+    color: #000;
+    -ms-transform: scaleX(-1) rotate(-40deg);
+    -webkit-transform: scaleX(-1) rotate(-40deg);
+    transform: scaleX(-1) rotate(-40deg);
+}
+input:checked + .ot-toggle-slider {
+    background-color: #429944;
+    border: 1px solid #429944;
+}
+input:checked + .ot-toggle-slider:before {
+    background-color: #fff;
+    border: none;
+    left: 1px !important;
+    bottom: 4px !important;
+}
+input:focus+.ot-toggle-slider {
+    border: none;
+}
+/* [ TOGGLE CSS END ] */
+
+/* [ CHECKBOX CSS START ] */
+.slds-checkbox
+[type="checkbox"]:not([disabled]):checked
++ .slds-checkbox__label
+.slds-checkbox_faux,
+.slds-checkbox
+[type="checkbox"]:not([disabled]):checked:focus
++ .slds-checkbox__label
+.slds-checkbox_faux {
+    background: #1460aa !important;
+}
+.slds-checkbox .slds-checkbox_faux {
+    border: 2px solid #1460aa !important;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+/* [ CHECKBOX CSS END ] */
+
+/* [ CARD CSS START ] */
+.ot-preference-section {
+    border-radius: 16px;
+    border: none !important;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    margin: 2px auto 30px auto !important;
+    .ot-preference-section-header {
+        display: flex !important;
+        justify-content: space-between !important;
+        padding: 26px 24px !important;
+        &::after {
+            content: "";
+            display: block;
+            width: 180px;
+            height: 24px;
+            background-image: url("https://privacyportal-uat-cdn.onetrust.com/preferencecenter-portal-settings/c869c0ad-614c-475f-89a0-2d4fa599dac6/Published/caf630c8-157d-4f4c-aeed-193ea828a9df/header1715038382802.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    .ot-preference-purpose {
+        margin: 24px !important;
+        max-width: 100% !important;
+        .ot-setting {
+            margin-bottom: 16px !important;
+            padding: 0 8px 8px 0 !important;
+            .ot-setting__title {
+                font-size: 18px !important;
+                font-weight: 700 !important;
+                line-height: 24px !important;
+                margin-bottom: 4px;
+            }
+            .ot-setting__description {
+                font-size: 16px !important;
+                font-weight: 400 !important;
+                line-height: 20px !important;
+            }
+        }
+        .ot-setting__children {
+            margin-left: 0 !important;
+            .purpose-children {
+                margin-left: 0 !important;
+            }
+        }
+        &.purpose-not-given .ot-setting__children {
+            display: none;
+        }
+    }
+    .ot-collapse {
+        .ot-collapse__header-btn {
+            border: none;
+            cursor: auto;
+            padding: 0 !important;
+            font-size: 16px;
+            margin-bottom: 16px;
+            user-select: text;
+            font-weight: 600;
+            .ot-collapse__header {
+                .ot-collapse__header-text {
+                    text-align: left !important;
+                }
+                .text-small {
+                    display: none !important;
+                }
+                .ot-collapse__header-arrow {
+                    display: none !important;
+                }
+            }
+        }
+        .ot-collapse__content {
+            height: auto;
+            overflow: visible;
+            transform-origin: top center;
+            .ot-preference__options {
+                padding: 0 0 !important;
+                background-color: white !important;
+                ot-grid-row {
+                    flex-direction: column !important;
+                    gap: 16px !important;
+                    ot-grid-column {
+                        padding-left: 10px !important;
+                        width: 100%;
+                        .ot-preference-custom-option-checkbox {
+                            padding: 0;
+                            gap: 10px;
+                            align-items: center;
+                            ot-checkbox {
+                                align-self: start;
+                            }
+                            & > span {
+                                font-size: 16px;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .custom-preference-option__asterisk {
+        display: none !important;
+    }
+}
+/* [ CARD CSS END ] */
+
+/* [ FOOTER CSS START ] */
+footer {
+    height: 90px !important;
+    padding: 24px !important;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15) !important;
+    border-top: none !important;
+    button {
+        font-size: 16px;
+        font-weight: 700 !important;
+        border: none;
+        height: 44px;
+        border-radius: 24px;
+        padding: 0 25px;
+        margin-left: 16px;
+    }
+    .ot-preference-actions-update {
+        background: #1360aa;
+    }
+    .ot-preference-actions-undo {
+        color: #1360aa;
+        background: white;
+        border: 1px solid #1360aa;
+        &:hover {
+            color: #1360aa;
+        }
+    }
+}
+/* [ FOOTER CSS END ] */
